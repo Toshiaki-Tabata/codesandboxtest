@@ -8,12 +8,12 @@
   <body>
     <h1>TODO(JS)</h1>
     <div class="input-area">
-      <input placeholder="TODOを入力" />
-      <button>追加</button>
+      <input id="add-text" placeholder="TODOを入力" />
+      <button id="todo-add">追加</button>
     </div>
     <div class="progress-area">
       <h2>未完了のTODO</h2>
-      <ul>
+      <ul id="progress-list">
         <li>
           <div class="todo-title">TODOです。</div>
           <button>完了</button>
@@ -28,7 +28,7 @@
     </div>
     <div class="complete-area">
       <h2>完了済みのTODO</h2>
-      <ul>
+      <ul id="complete-list">
         <li>
           <div class="todo-title">TODOでした。</div>
           <button>戻す</button>
