@@ -1,3 +1,47 @@
 body {
   font-family: sans-serif;
 }
+%todo-area-base {
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  input {
+    border-radius: 16px;
+    border: none;
+    padding: 5px 15px;
+  }
+  button {
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #ccddcc;
+    margin: 3px;
+  }
+  ul li {
+    display: flex;
+    list-style-type: disc;
+    list-style-position: 10px;
+  }
+  .todo-title {
+    display: flex;
+    align-items: center;
+
+  }
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #666;
+  }
+}
+.input-area {
+  @extend %todo-area-base;
+  background-color: #01eeff;
+}
+.progress-area {
+  @extend %todo-area-base;
+  background-color: #c6ffe2;
+}
+.complete-area {
+  @extend %todo-area-base;
+  background-color: #ffffe0;
+}
